@@ -3,7 +3,7 @@ import React from 'react'
 
 const Protofile = () => {
   return (
-    <div>Protofile</div>
+    <section id='protofile'>Protofile</section>
   )
 }
 
