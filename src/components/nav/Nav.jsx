@@ -5,11 +5,10 @@ import {BiBook,BiMessageSquareDetail} from 'react-icons/bi'
 import {RiServiceLine} from 'react-icons/ri'
 import { useState } from 'react'
 const Nav = () => {
-const [activeNav,setActveNav]=  useState('#')
-
+const [activeNav,setActveNav]=  useState('#Home')
   return (
     <nav>
-      <a href="#" onClick={()=>setActveNav('#')} className={activeNav==='#'?'active':''}><AiOutlineHome/></a>
+      <a href="#Home" onClick={()=>setActveNav('#Home')} className={activeNav==='#'?'active':''}><AiOutlineHome/></a>
       <a href="#about" onClick={()=>setActveNav('#about')} className={activeNav==='#about'?'active':''} ><AiOutlineUser/></a>
       <a href="#experience" onClick={()=>setActveNav('#experience')} className={activeNav==='#experience'?'active':''}><BiBook/></a>
       <a href="#services" onClick={()=>setActveNav('#services')} className={activeNav==='#services'?'active':''}><RiServiceLine/></a>
