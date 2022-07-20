@@ -1,5 +1,4 @@
 import React from 'react'
-// import {AiFillLinkedin} from 'react-icons/bs'
 import { BsLinkedin,BsGithub,BsFacebook } from 'react-icons/bs';
 const HeaderSocials = () => {
   return (

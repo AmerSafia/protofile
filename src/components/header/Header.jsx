@@ -1,7 +1,6 @@
 import './header.css'
 import React from 'react'
 import CTA from './CTA'
-import ME from "../../assets/me.png"
 import HeaderSocials from './HeaderSocials'
 const Header = () => {
   return (
@@ -16,7 +15,7 @@ const Header = () => {
 
         <div className="me">
         {/*eslint-disable-next-line */}
-          <img src={ME}></img>
+          <img src='./assets/me.jpg'></img>
         </div>
 
         <a href="#contact" className='scroll__down'>Scroll Down</a>

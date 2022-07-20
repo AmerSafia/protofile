@@ -1,9 +1,26 @@
 import "./about.css";
-import ME from "../../assets/me-about.jpg";
 import React from "react";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
+const aboutDetails = [
+  {
+    title: "Experiance",
+    icon: <FaAward className="about__icon" />,
+    details: "1+ year Working",
+  },
+  {
+    title: "Clients",
+    icon: <FiUsers className="about__icon" />,
+    details: "5+Worldwide",
+  },
+  {
+    title: "Projects",
+    icon: <VscFolderLibrary className="about__icon" />,
+    details: "10+Completed",
+  },
+];
+
 const About = () => {
   return (
     <section id="about">
@@ -13,28 +30,21 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="about me image" />
+            <img src='./assets/me-about.jpg' alt="" />
           </div>
         </div>
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card">
-              <FaAward className="About__icon" />
-              <h5>Experiance</h5>
-              <small>1+ years Working</small>
-            </article>
-            <article className="about__card">
-              <FaAward className="About__icon" />
-              <h5>Experiance</h5>
-              <small>1+ years Working</small>
-            </article>
-            <article className="about__card">
-              <FaAward className="About__icon" />
-              <h5>Experiance</h5>
-              <small>1+ years Working</small>
-            </article>
+            {aboutDetails.map((card) => {
+              return (
+                <article className="about__card">
+                  {card.icon}
+                  <h5>{card.title}</h5>
+                  <small style={{ fontSize: "0.7rem" }}>{card.details}</small>
+                </article>
+              );
+            })}
           </div>
-
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas
             corrupti reiciendis harum asperiores ullam ipsum cupiditate fugiat
