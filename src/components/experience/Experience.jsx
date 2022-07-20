@@ -17,8 +17,8 @@ const experianceLangBack = [
   { lang: "MongoDB", experiance: "intermediate" },
   { lang: "php", experiance: "Basic" },
   { lang: "Firebase", experiance: "intermediate" },
-  { lang: "noSql", experiance: "intermediate" },
-  { lang: "Sql", experiance: "Basic" },
+  { lang: "NoSql", experiance: "Basic" },
+  { lang: "MySql", experiance: "Basic" },
 ];
 const Experience = () => {
   return (

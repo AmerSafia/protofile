@@ -30,7 +30,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src='./assets/me-about.jpg' alt="" />
+            <img src="./assets/me-about.jpg" alt="" />
           </div>
         </div>
         <div className="about__content">
@@ -46,10 +46,12 @@ const About = () => {
             })}
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas
-            corrupti reiciendis harum asperiores ullam ipsum cupiditate fugiat
-            nam quae possimus, quia labore distinctio nostrum recusandae
-            incidunt laudantium qui ea?
+            Experienced Frontend Developer with a demonstrated history of
+            working in the computer software industry. Skilled in HTML,
+            JS(React, Vue, Node), SASS, Web Applications, and Front-end
+            Development. Strong engineering professional with a Bachelor's
+            degree focused in Information Technology from Al-Al Byate University
+            .
           </p>
           <a href="#contact" className="btn btn-primary">
             {" "}
